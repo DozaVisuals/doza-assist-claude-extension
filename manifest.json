@@ -1,0 +1,47 @@
+{
+  "manifest_version": "0.3",
+  "name": "doza-assist",
+  "display_name": "Doza Assist",
+  "version": "1.1.0",
+  "description": "Your own Doza Assist projects on this Mac: read transcripts and selects, search a transcript, create selects, build a selects stringout.",
+  "long_description": "Requires the Doza Assist app for macOS (free trial at https://doza.ai/download.html). Talks to the app running on this Mac over loopback. Only projects you switched on (project page gear menu > AI assistant access) are visible. Media never leaves the Mac; only transcript text and selects travel, and nothing here can delete or edit your clips. Doza Assist must be open.",
+  "author": { "name": "Doza Visuals", "url": "https://github.com/DozaVisuals" },
+  "repository": { "type": "git", "url": "https://github.com/DozaVisuals/doza-assist-claude-extension" },
+  "license": "MIT",
+  "homepage": "https://doza.ai",
+  "documentation": "https://doza.ai/changelog/1.1/#s4",
+  "support": "https://doza.ai/legal/contact",
+  "icon": "icon.png",
+  "server": {
+    "type": "binary",
+    "entry_point": "run.sh",
+    "mcp_config": {
+      "command": "/bin/sh",
+      "args": ["${__dirname}/run.sh"],
+      "env": { "DOZA_APP": "${user_config.app_path}" }
+    }
+  },
+  "user_config": {
+    "app_path": {
+      "type": "directory",
+      "title": "Doza Assist app",
+      "description": "Where Doza Assist.app is installed. Leave the default unless you run a copy from another folder.",
+      "required": false,
+      "default": ["/Applications/Doza Assist.app"]
+    }
+  },
+  "tools": [
+    { "name": "list_my_projects", "description": "List the projects opened to AI assistants" },
+    { "name": "get_my_transcript", "description": "Read a project's transcript" },
+    { "name": "search_my_projects", "description": "Search a transcript" },
+    { "name": "get_my_selects", "description": "Read a project's selects" },
+    { "name": "create_my_select", "description": "Create a select" },
+    { "name": "export_my_stringout", "description": "Build a selects stringout" }
+  ],
+  "keywords": ["video", "editing", "transcript", "interviews", "selects"],
+  "compatibility": {
+    "claude_desktop": ">=0.10.0",
+    "platforms": ["darwin"]
+  },
+  "privacy_policies": ["https://doza.ai/legal/privacy"]
+}
