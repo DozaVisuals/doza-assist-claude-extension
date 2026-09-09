@@ -12,8 +12,8 @@ Assist app running on your Mac, over the loopback interface only.
 **This repo is the Claude Desktop extension (MCPB bundle) only.** It is a thin
 bridge, MIT licensed. It talks to the paid **Doza Assist** app for macOS
 (https://doza.ai, free trial included); it does not work with the open-source
-Doza Assist Core, which has no assistant-access panel. Releases carry the
-packed `Doza-Assist.mcpb`; the same bundle ships inside the app behind its
+Doza Assist Core, which has no assistant-access panel. The packed `Doza-Assist.mcpb` sits at the root of this repo (and on the
+Releases page); the same bundle ships inside the app behind its
 **Add to Claude Desktop** button.
 
 ## Requirements
@@ -98,8 +98,8 @@ Doza Assist is a macOS app; the connector needs it installed and open.
    clip is ideal). Wait for the transcript to appear.
 4. On the project page: gear menu > **AI assistant access** > switch on
    **Claude can read this project**.
-5. Install the extension: double-click `Doza-Assist.mcpb` from the latest
-   release (or press **Add to Claude Desktop** in that same panel). Keep the
+5. Install the extension: double-click `Doza-Assist.mcpb` from this repo
+   (or press **Add to Claude Desktop** in that same panel). Keep the
    default app folder.
 6. In Claude Desktop:
    - "List my Doza projects" -> `list_my_projects` returns the project.
