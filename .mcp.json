@@ -2,7 +2,7 @@
   "mcpServers": {
     "doza-assist": {
       "command": "/bin/sh",
-      "args": ["${CLAUDE_PLUGIN_ROOT}/run.sh"]
+      "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/run.sh"]
     }
   }
 }

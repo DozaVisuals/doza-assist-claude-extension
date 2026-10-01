@@ -63,16 +63,17 @@ haven't switched on, or read your My Style profiles. There is no delete tool.
 
 ## What the plugin runs and sends
 
-- `run.sh` finds the Doza Assist app (in /Applications or ~/Applications, or
-  through Spotlight) and starts `server.py` with the Python bundled inside the
-  app. Nothing is downloaded or installed, and nothing is written into the app.
-- `server.py` reads `~/Library/Application Support/DozaAssist/backend.json`,
+- `mcp/run.sh` finds the Doza Assist app (in /Applications or ~/Applications,
+  or through Spotlight) and starts `mcp/server.py` with the Python bundled
+  inside the app. Nothing is downloaded or installed, and nothing is written
+  into the app.
+- `mcp/server.py` reads `~/Library/Application Support/DozaAssist/backend.json`,
   which the app writes, to find the app's local address. It sends each tool call
   to the app at `http://127.0.0.1` (ports 5050 to 5060), never through a proxy.
   When the app doesn't answer, it runs `pgrep` to tell "starting up" from
   "not running".
-- `schema.json` holds the tool definitions. Arguments are checked against them
-  before anything is sent to the app.
+- `mcp/schema.json` holds the tool definitions. Arguments are checked against
+  them before anything is sent to the app.
 - The app answers only for projects you switched on. Selects Claude creates are
   saved in that project, and stringouts are written to
   `~/Documents/Doza Assist/Exports`.

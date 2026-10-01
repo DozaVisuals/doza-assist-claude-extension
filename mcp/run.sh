@@ -3,6 +3,9 @@
 # Python bundled inside the installed Doza Assist app, so no system Python is
 # needed and nothing is downloaded. server.py finds the running app through
 # the backend.json the app writes in ~/Library/Application Support/DozaAssist/.
+# Keep this folder named mcp/: Doza Assist's start-up clean-up of leftover
+# processes on its bundled Python leaves anything running .../mcp/server.py
+# alone, so opening or restarting the app never stops this connector.
 HERE="$(cd "$(dirname "$0")" && pwd)"
 REL="Contents/Resources/python/bin/python3"
 # -B: never write __pycache__ into the app bundle (it breaks its code seal).
