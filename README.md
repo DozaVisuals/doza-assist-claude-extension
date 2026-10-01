@@ -85,7 +85,8 @@ haven't switched on, or read your My Style profiles. There is no delete tool.
 
 ## Privacy
 
-Full policy: https://doza.ai/legal/privacy. Contact: privacy@doza.ai.
+Full policy: [doza.ai/legal/privacy](https://doza.ai/legal/privacy). Contact:
+privacy@doza.ai.
 
 **What never leaves your Mac.** Your video and audio files, projects you haven't
 switched on, your My Style profiles and your Doza Assist settings.
@@ -131,8 +132,8 @@ nothing. That's the privacy gate.
 
 ## Support
 
-https://doza.ai/legal/contact, answered within a business day, or the community
-Discord linked from https://doza.ai.
+[doza.ai/legal/contact](https://doza.ai/legal/contact), answered within a
+business day, or the community Discord linked from [doza.ai](https://doza.ai).
 
 ## License
 

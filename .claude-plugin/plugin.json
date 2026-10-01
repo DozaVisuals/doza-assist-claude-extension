@@ -10,5 +10,9 @@
   "homepage": "https://doza.ai",
   "repository": "https://github.com/DozaVisuals/doza-assist-claude-extension",
   "license": "MIT",
+  "documentationUrl": "https://doza.ai/guide/#ai-assistant-access-a-connector-for-claude-mcp",
+  "privacyPolicyUrl": "https://doza.ai/legal/privacy",
+  "supportUrl": "https://doza.ai/legal/contact",
+  "termsOfServiceUrl": "https://doza.ai/legal/terms",
   "keywords": ["video editing", "interviews", "transcripts", "selects", "documentary"]
 }
